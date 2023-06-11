@@ -27,21 +27,24 @@ Anaconda - Python 3.7
 #Register No: 21222110016
 
 import sys
-count = {}
-with open(sys.argv[1], 'r') as f:
-    for line in f:
-        for word in line.split():
-            if word not in count:
-                count[word] = 1
-            else:
-                count[word] += 1
-print(count)
-f.close()
+fp=open(sys.argv[1],'r')
+count=0
+for line in fp:
+    words=line.split()
+    count+=len(words)
+print("Number of words in a file",count)
+
 ```
+
 
 ### OUTPUT:
 
-![pyth 5b output](https://github.com/kancharlaNarmadha/command-line-arguments-to-count-word/assets/119559316/7bebdddc-7a2f-45eb-b6a4-e2e002a72be4)
+![PYTHON 51](https://github.com/kancharlaNarmadha/command-line-arguments-to-count-word/assets/119559316/52ffb693-3434-4dbe-ac6b-7d2298ab34eb)
+
+![PYTHON 52](https://github.com/kancharlaNarmadha/command-line-arguments-to-count-word/assets/119559316/783ab6e8-54e7-4b2f-8d71-ca30348df20d)
+
+![PYTHON 53](https://github.com/kancharlaNarmadha/command-line-arguments-to-count-word/assets/119559316/40a33a13-746f-430b-a839-9cfcb284ef9c)
+
 
 
 
